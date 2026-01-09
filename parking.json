@@ -1,0 +1,52 @@
+{
+  "vehicles": [
+    {
+      "id": "8e43",
+      "plateNumber": "143",
+      "type": "camionnette",
+      "entryTime": "2026-01-09T16:45:15.886Z",
+      "exitTime": null,
+      "slotNumber": 1
+    },
+    {
+      "id": "dfc4",
+      "plateNumber": "3334",
+      "type": "camion",
+      "entryTime": "2026-01-09T16:45:38.356Z",
+      "exitTime": null,
+      "slotNumber": 2
+    }
+  ],
+  "parkingPlaces": [
+    {
+      "number": 1,
+      "occupied": true,
+      "id": "d5f0"
+    },
+    {
+      "number": 2,
+      "occupied": true,
+      "id": "4ad8"
+    },
+    {
+      "number": 3,
+      "occupied": false,
+      "id": "rf9o"
+    },
+    {
+      "number": 4,
+      "occupied": false,
+      "id": "4ss8"
+    },
+    {
+      "number": 5,
+      "occupied": false,
+      "id": "jdf0"
+    },
+    {
+      "number": 6,
+      "occupied": false,
+      "id": "4as9j"
+    }
+  ]
+}

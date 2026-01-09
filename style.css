@@ -1,0 +1,151 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #f5f5f5;
+  font-family: sans-serif;
+}
+
+
+.container{
+   display: grid;
+   color: #333333;
+   width: 97%;
+   max-width: 1200px;
+   min-height: 70vh;
+   color: #333;
+
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: 80px  1fr 60px;
+  grid-template-areas: "title title title"
+  "form places vehiclesTable"
+  "tarif tarif tarif";
+ gap: 24px;
+
+}
+.title {
+    grid-area: title;
+    background-color: #4A90E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    justify-self: center;
+      border-radius: 10px; 
+}
+
+.form {
+grid-area: form;
+background-color:  #FFFFFF;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+#ajoutbutton{
+   height: 45px;   
+  background-color: #5CB85C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+#formAjouter{
+    display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+#formAjouter input[type="text"] {
+  height: 30px;  
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.vehicle-types {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.vehicle-types label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+
+ .form , .places , .vehiclesTable  {
+     border-radius: 10px;      
+  border: 1px solid #ddd;     
+  padding: 20px;
+}
+
+.placeinfo{
+
+    justify-self: center;
+}
+
+.places ul {
+ display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+
+}
+
+.places li {
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  background-color: #E8F0FE;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  
+}
+
+
+.vehiclesTable {
+  grid-area: vehiclesTable;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+}
+
+th, td {
+  height: 40px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tarif {
+  grid-area: tarif;
+  background-color: #FFF9E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="title">
+      <h1>Système de Gestion de Parking</h1>
+    </div>
+
+
+
+<div class="form">
+    
+    <form  id="formAjouter" action="">
+    <label for="imm"> Immatriculation</label>
+    <input type="text" id="imm" name="imm">
+
+    <label> Type de véhicule </label>
+    
+<div class="vehicle-types">
+  <label>
+    <input type="radio" name="vtype" value="voiture">
+    Voiture
+  </label>
+
+  <label>
+    <input type="radio" name="vtype" value="moto">
+    Moto
+  </label>
+
+  <label>
+    <input type="radio" name="vtype" value="camionnette">
+    Camionnette
+  </label>
+
+  <label>
+    <input type="radio" name="vtype" value="camion">
+    Camion
+  </label>
+</div>
+
+    <input type="button" id="ajoutbutton" value="Submit" onclick="ajouter()">
+    </form>
+</div>
+
+
+
+<div class="places">
+    <h3 class="placeinfo"></h3>
+    <ul class="placesul">
+    </ul>
+</div>
+
+    <div class="vehiclesTable"> 
+        <table border="1">
+            <thead>
+          <tr>
+        <th>Plate</th>
+        <th>Type</th>
+        <th>Entry Time</th>
+        <th>Slot</th>
+        <th>Action</th>
+      </tr>
+          
+             </thead>
+            <tbody id="vehicles"> </tbody>
+     </table>
+     </div>
+
+    <div class="tarif" id="tarif">
+  <em>Aucun véhicule sorti</em>
+</div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
