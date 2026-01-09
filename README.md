@@ -1,78 +1,52 @@
 
-# Système de Gestion de Parking-Intelligent
+Système de Gestion de Parking-Intelligent
 
 Une application web simple pour gérer un parking : suivre les véhicules, les places, calculer les frais et générer des tickets.
 
----
-
-## Fonctionnalités
+Fonctionnalités
 
 * Ajouter des véhicules dans les places libres
 * Suivi de l’heure d’entrée, du type de véhicule et du numéro de place
 * Calcul automatique des frais de stationnement selon la durée
 * Sortie des véhicules avec génération de ticket
 * Affichage de l’occupation des places
-
----
-
-## Prérequis
+ Prérequis
 
 * Node.js v22+
 * npm v10+
 * Un fichier JSON (`parking.json`) servant de base de données pour JSON Server
 
----
 
-## Installation
+Installation
 
 1. Cloner le projet :
 
-```bash
+bash
 git clone <votre-url-de-repo>
 cd Système-de-Gestion-de-Parking-Intelligent
-```
 
 2. Installer JSON Server globalement (optionnel) :
 
-```bash
+bash
 npm install -g json-server
-```
+
 
 Ou utiliser `npx` sans installation globale.
 
----
 
-## Lancer le Backend (JSON Server)
-
-Assurez-vous que votre fichier JSON s’appelle `parking.json` et contient quelque chose comme :
-
-```json
-{
-  "vehicles": [],
-  "parkingPlaces": [
-    { "id": 1, "number": 1, "occupied": false },
-    { "id": 2, "number": 2, "occupied": false },
-    { "id": 3, "number": 3, "occupied": false },
-    { "id": 4, "number": 4, "occupied": false },
-    { "id": 5, "number": 5, "occupied": false }
-  ]
-}
-```
 
 Pour lancer JSON Server :
 
-```bash
+bash
 npx json-server --watch parking.json --port 3000
-```
+
 
 Le backend sera disponible sur :
 
 * Véhicules : `http://localhost:3000/vehicles`
 * Places de parking : `http://localhost:3000/parkingPlaces`
 
----
-
-## Lancer le Frontend
+Lancer le Frontend
 
 1. Ouvrir `index.html` dans un navigateur (pas besoin de serveur pour les fichiers statiques)
 2. Utiliser l’interface pour ajouter ou sortir des véhicules
